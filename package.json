@@ -1,0 +1,30 @@
+{
+  "name": "webapp-slides",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "npm run htmlhint && npm run eslint && npm run stylelint",
+    "start": "webpack -d",
+    "build": "webpack -p",
+    "production": "npm run build && rsync -av dist/bundle.js webapp.css *.html efo@jsramverk.me:/var/www/webapp.emilfolino.se/html/",
+    "htmlhint": "htmlhint *.html",
+    "eslint": "eslint *.js",
+    "stylelint": "stylelint *.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "slideorama": "^1.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "eslint-plugin-react": "^7.12.4",
+    "htmlhint": "^0.11.0",
+    "javascript-style-guide": "^1.0.1",
+    "stylelint": "^9.10.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
