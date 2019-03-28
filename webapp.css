@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Roboto+Mono');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto+Mono');
+
 html,
 body {
     width: 100%;
@@ -19,6 +20,7 @@ body {
 h1 {
     font-size: 2.4em;
     border-bottom: 5px solid #f0db4f;
+    margin-top: 0;
 }
 
 h2 {
@@ -26,7 +28,17 @@ h2 {
 }
 
 h3 {
-    font-size: 1.6em;
+    font-size: 1.8em;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+
+p {
+    font-size: 1.2em;
 }
 
 @media (min-width: 64em) {
@@ -69,7 +81,7 @@ h3 {
 }
 
 .timer {
-    font-size: 3.25em;
+    font-size: 3em;
     position: absolute;
     top: 0;
     right: 0;
@@ -88,7 +100,6 @@ code {
     background-color: #ccc;
     color: #333;
     padding: 0 0.4rem;
-
 }
 
 pre {
@@ -97,5 +108,23 @@ pre {
     padding: 0.4rem 1rem;
     line-height: 1.4;
     color: #333;
-    font-size: 2em;
+    font-size: 1.2em;
+}
+
+table {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1.2em;
+    border-collapse: collapse;
+}
+
+th {
+    text-align: left;
+    font-weight: bold;
+    padding: 0.3em 0.6em;
+}
+
+td {
+    border-top: 1px solid white;
+    padding: 0.3em 0.6em;
 }
