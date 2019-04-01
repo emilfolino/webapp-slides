@@ -7,7 +7,7 @@
     "test": "npm run htmlhint && npm run eslint && npm run stylelint",
     "start": "webpack -d",
     "build": "webpack -p",
-    "production": "npm test && npm run build && rsync -av bundle.js webapp.css *.html efo@emilfolino.se:/var/www/webapp.emilfolino.se/html/",
+    "production": "npm test && npm run build && rsync -av bundle.js webapp.css *.html examples efo@emilfolino.se:/var/www/webapp.emilfolino.se/html/",
     "htmlhint": "htmlhint *.html",
     "eslint": "eslint *.js",
     "stylelint": "stylelint *.css"
