@@ -103,9 +103,7 @@ code {
 }
 
 pre {
-    background-color: #ccc;
     border-left: 5px solid #f0db4f;
-    padding: 0.4rem 1rem;
     line-height: 1.4;
     color: #333;
     font-size: 1.2em;

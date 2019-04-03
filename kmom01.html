@@ -175,10 +175,10 @@
         <div class="slide">
             <h1>Skapa element i DOM'en</h1>
 
-            <pre>var root = document.getElementById("root");
+            <pre><code class="javascript">var root = document.getElementById("root");
 var element = document.createElement("h1");
 element.textContent = "JavaScript rocks!";
-root.appendChild(element);</pre>
+root.appendChild(element);</code></pre>
         </div>
 
         <div class="slide">
@@ -204,21 +204,21 @@ root.appendChild(element);</pre>
         <div class="slide">
             <h1>XMLHttpRequest</h1>
 
-            <pre>var githubRequest = new XMLHttpRequest();
+            <pre><code class="javascript">var githubRequest = new XMLHttpRequest();
 
 githubRequest.addEventListener("load", renderGithubRepos);
 githubRequest.open("GET", "https://api.github.com/users/:username/repos");
-githubRequest.send();</pre>
+githubRequest.send();</code></pre>
         </div>
 
         <div class="slide">
             <h1><code>fetch</code> to the rescue</h1>
-            <pre>fetch("https://api.github.com/users/:username/repos")
+            <pre><code class="javascript">fetch("https://api.github.com/users/:username/repos")
 .then(function (response) {
     return response.json();
 }).then(function(data) {
     ...
-});</pre>
+});</code></pre>
         </div>
 
         <div class="slide">
